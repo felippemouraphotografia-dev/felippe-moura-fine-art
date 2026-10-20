@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111111;
+    color: #e8e5df;
+    line-height: 1.6;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+header {
+    background-color: #111111;
+    min-width: 400px;
+    padding: 40px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid #b89554;
+
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+header p {
+    color: #b0aca5;
+    max-width: 700px;
+    margin-bottom: 1.5rem;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    color: #b89554;
+    font-weight: bold;
+    transition: color 0.3;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: #b89554;
+    border-bottom: 1px solid #333;
+    padding-bottom: 8px;
+}
+
+article {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+figure {
+    width: 100%;
+}
+
+figcaption {
+    margin-top: 8px;
+    font-style: italic;
+    color: #a09c95;
+    font-size: 0.95rem;
+}
+
+aside {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #b89554;
+}
+
+aside ul {
+    margin-left: 20px;
+    color: #b0aca5;
+}
+
+address {
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #0a0a0a;
+    color: #777;
+    font-size: 0.9rem;
+    border-top: 1px solid #222;
+    margin-top: 40px;
+}
