@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +13,11 @@ body {
     background-color: #111111;
     color: #e8e5df;
     line-height: 1.6;
+}
+
+header h1, 
+section h2 {
+    font-family: 'Playfair Display', 'Garamond', Georgia, serif;
 }
 
 a{
@@ -124,6 +133,22 @@ address {
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+
+address p a[href*="wa.me"] {
+    display: inline-block;
+    background-color: #25d366;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+address p a[href*="wa.me"]:hover {
+    background-color: #128c7e;
+    color: #ffffff;
+    transform: translateY(-2px);
 }
 
 footer {
