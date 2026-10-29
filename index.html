@@ -100,5 +100,22 @@
     <footer>
         <p>&copy; 2026 Felippe Moura. Todos os direitos reservados.</p>
     </footer>
+    <!-- ENVIO SEGURO VIA WEBHOOK MAKE -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const btnWhatsapp = document.getElementById('btn-whatsapp');
+    if (btnWhatsapp) {
+      btnWhatsapp.addEventListener('click', () => {
+        // Cole o seu link do Webhook do Make entre as aspas abaixo
+        const URL_DO_WEBHOOK = "https://hook.us2.make.com/7ogszu5ov9ikcwuezxanrtei610wfqxy";
+
+        // Envia o aviso do clique sem ser bloqueado pelo navegador
+        fetch(URL_DO_WEBHOOK + "?evento=Clique+WhatsApp&origem=Landing+Page", {
+          mode: 'no-cors'
+        });
+      });
+    }
+  });
+</script>
 </body>
 </html>
