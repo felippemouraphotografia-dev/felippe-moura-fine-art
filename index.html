@@ -16,11 +16,11 @@
         <p>A imensidão da natureza e a luz do entardecer eternizadas em quadros de alta qualidade para seu ambiente.</p>
 
         <figure class="logo-header">
-        <img src="imagens/Logomarca.jpeg" alt="Felippe Moura Photografia - Fine Art Photography">
-    </figure>
+            <img src="imagens/Logomarca.jpeg" alt="Felippe Moura Photografia - Fine Art Photography">
+        </figure>
     
-    <h1 class="sr-only">Felippe Moura Photografia / Fine Art e Fotografia de Paisagem</h1>
-    <p>A imensidão da natureza e a luz do entardecer eternizadas em quadros de alta qualidade para seu ambiente.</p>
+        <h1 class="sr-only">Felippe Moura Photografia / Fine Art e Fotografia de Paisagem</h1>
+        <p>A imensidão da natureza e a luz do entardecer eternizadas em quadros de alta qualidade para seu ambiente.</p>
         <nav>
             <a href="#galeria">Galeria</a>
             <a href="#ambientes">Quadros em Ambientes</a>
@@ -54,30 +54,30 @@
             <h2>Simulação de ambientes</h2>
             <p>Veja como as obras transformam e valorizam a decoração de interiores com elegância e sofisticação. </p>
         
-        <article>
-            <figure>
-                <img src="ambientes/Testemunha silenciosa borda preta_paspatur cinza.jpg" alt="Quadro Fine Art, com qualidade de papel a sua escolha.">
-                <figcaption>Sala de Estar</figcaption>
-            </figure>
-            <p>Impressão em papel de qualidade a escolha do cliente, em alto padrão, trazendo profundidade e aconchego para espaços corporativos e residenciais.</p>
-        </article>
+            <article>
+                <figure>
+                    <img src="ambientes/Testemunha silenciosa borda preta_paspatur cinza.jpg" alt="Quadro Fine Art, com qualidade de papel a sua escolha.">
+                    <figcaption>Sala de Estar</figcaption>
+                </figure>
+                <p>Impressão em papel de qualidade a escolha do cliente, em alto padrão, trazendo profundidade e aconchego para espaços corporativos e residenciais.</p>
+            </article>
 
-        <article>
-            <figure>
-                <img src="ambientes/Horizonte Particular.jpg" alt="Quadro Fine Art, com qualidade de papel a sua escolha.">
-                <figcaption>Sala de Estar</figcaption>
-            </figure>
-            <p>Impressão em papel de qualidade a escolha do cliente, em alto padrão, trazendo profundidade e aconchego para espaços corporativos e residenciais.</p>
-        </article>
+            <article>
+                <figure>
+                    <img src="ambientes/Horizonte Particular.jpg" alt="Quadro Fine Art, com qualidade de papel a sua escolha.">
+                    <figcaption>Sala de Estar</figcaption>
+                </figure>
+                <p>Impressão em papel de qualidade a escolha do cliente, em alto padrão, trazendo profundidade e aconchego para espaços corporativos e residenciais.</p>
+            </article>
 
-        <aside>
-            <h3>Opções de Formatos e Acabamentos</h3>
-            <ul>
-                <li>Impressão em Canvas ou Canson Matte Fosco</li>
-                <li>Emolduramento de qualidade a escolha com passe-partout</li>
-                <li>Opções de painéis dípticos e trípticos</li>
-            </ul>
-        </aside>
+            <aside>
+                <h3>Opções de Formatos e Acabamentos</h3>
+                <ul>
+                    <li>Impressão em Canvas ou Canson Matte Fosco</li>
+                    <li>Emolduramento de qualidade a escolha com passe-partout</li>
+                    <li>Opções de painéis dípticos e trípticos</li>
+                </ul>
+            </aside>
         </section>
 
         <section id="sobre">
@@ -90,7 +90,7 @@
             <p>Interessado em levar a tranquilidade da paisagem para sua casa ou escritório? Entre em contato para conhecer o catálogo completo, tamanhos disponíveis e simulações personalizadas.</p>
 
             <address>
-                <p>WhatsApp: <a href="https://wa.me/5522996112369?text=Ol%C3%A1%2C%20Felippe!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20quadros%20Fine%20Art." target="_blank" rel="noopener">Falar no WhatsApp</a></p>
+                <p>WhatsApp: <a href="https://wa.me/5522996112369?text=Ol%C3%A1%2C%20Felippe!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20quadros%20Fine%20Art." id="btn-whatsapp" target="_blank" rel="noopener">Falar no WhatsApp</a></p>
                 <p>E-mail: <a href="mailto:felippemouraphotografia@gmail.com">felippemouraphotografia@gmail.com</a></p>
                 <p>Instagram: <a href="https://instagram.com/felippemouraphotografia" target="_blank" rel="noopener">@felippemouraphotografia</a></p>
             </address>    
@@ -99,23 +99,25 @@
 
     <footer>
         <p>&copy; 2026 Felippe Moura. Todos os direitos reservados.</p>
-    </footer>
-    <!-- ENVIO SEGURO VIA WEBHOOK MAKE -->
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const btnWhatsapp = document.getElementById('btn-whatsapp');
-    if (btnWhatsapp) {
-      btnWhatsapp.addEventListener('click', () => {
-        // Cole o seu link do Webhook do Make entre as aspas abaixo
-        const URL_DO_WEBHOOK = "https://hook.us2.make.com/xan9yjdb3pdu5vefhh5rxrrmnmp3lck5";
-
-        // Envia o aviso do clique sem ser bloqueado pelo navegador
-        fetch(URL_DO_WEBHOOK + "?evento=Clique+WhatsApp&origem=Landing+Page", {
-          mode: 'no-cors'
-        });
+    </footer>  
+      
+    <!-- RASTREAMENTO DO CLIQUE NO WHATSAPP PARA O MAKE.COM -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const btnWhatsapp = document.getElementById('btn-whatsapp');
+        if (btnWhatsapp) {
+          btnWhatsapp.addEventListener('click', () => {
+            // SUBSTITUA O LINK ABAIXO PELO LINK DO SEU WEBHOOK DO MAKE:
+            const URL_DO_WEBHOOK = "https://hook.us2.make.com/xan9yjdb3pdu5vefhh5rxrrmnmp3lck5";
+            
+            // Dispara o sinal diretamente para o Make
+            fetch(URL_DO_WEBHOOK + "?evento=Clique_WhatsApp_LandingPage", {
+              method: 'GET',
+              mode: 'no-cors'
+            }).catch(err => console.log('Erro de envio:', err));
+          });
+        }
       });
-    }
-  });
-</script>
+    </script>
 </body>
 </html>
