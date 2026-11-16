@@ -101,15 +101,24 @@
         <p>&copy; 2026 Felippe Moura. Todos os direitos reservados.</p>
     </footer>  
       
-    <!-- RASTREAMENTO DO CLIQUE NO WHATSAPP PARA O MAKE.COM -->
+   <!-- RASTREAMENTO DE VISUALIZAÇÕES E CLIQUES PARA O MAKE.COM -->
 <script>
   document.addEventListener('DOMContentLoaded', () => {
+    const URL_DO_WEBHOOK = "https://hook.us2.make.com/xan9yjdb3pdu5vefhh5rxrrmnmp3lck5";
+
+    // 1. AVISA ASSIM QUE A PÁGINA É ABERTA (Visualização)
+    fetch(URL_DO_WEBHOOK, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ evento: 'Visualizacao_LandingPage' })
+    }).catch(err => console.log('Erro de envio:', err));
+
+    // 2. CONTINUA AVISANDO SE CLICAREM NO WHATSAPP
     const btnWhatsapp = document.getElementById('btn-whatsapp');
     if (btnWhatsapp) {
       btnWhatsapp.addEventListener('click', () => {
-        const URL_DO_WEBHOOK = "https://hook.us2.make.com/xan9yjdb3pdu5vefhh5rxrrmnmp3lck5";
-        
-        // Envia os dados como JSON via POST (evita totalmente o problema do no-cors e o Make lê o corpo perfeitamente)
         fetch(URL_DO_WEBHOOK, {
           method: 'POST',
           headers: {
